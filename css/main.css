@@ -422,6 +422,8 @@ padding: 30px;
     z-index: 2;
     }
 
+
+
 .featuresFigure__block--color:before {
     border-color: #396ec6;
 }
@@ -896,11 +898,11 @@ p {
 }
 @media (max-width: 400px) {
     .carousel-control-prev {
-        margin-left: 0;
+        margin-left: 0 !important;
       }
       
       .carousel-control-next {
-        margin-right: 0;
+        margin-right: 0 !important;
       }
     .col-contacts {
         -webkit-box-pack: start;
