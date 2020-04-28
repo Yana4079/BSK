@@ -967,7 +967,7 @@ p {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 450px) {
     .carousel-control-prev {
         margin-left: 0;
       }
