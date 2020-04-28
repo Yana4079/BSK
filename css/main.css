@@ -896,7 +896,7 @@ p {
        text-align: center;
    }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .carousel-control-prev {
         margin-left: 0 !important;
       }
