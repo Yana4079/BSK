@@ -1,3 +1,24 @@
+$(document).ready(function() {
+
+	//E-mail Ajax Send
+	$("form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Thank you!");
+			setTimeout(function() {
+				// Done Functions
+				th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+	});
+
+});
+
 $(function () {
 	/** -----------------------------------------
 	 * Modulo del Slider 
@@ -99,16 +120,4 @@ $(function () {
 
 });
 
-function SendEmail() {
-    var phone = document.getElementById('form-phone').value;
-    var email = document.getElementById('form-email').value;
 
-    $.ajax({
-        url: 'https:\/\/supermailsender.000webhostapp.com',
-        data: {
-            email: 'kefirnot@gmail.com',
-            subject: 'Заявка с лендинга',
-            message: 'Телефон: ' + phone + ', ' + 'Почта: ' + email,
-        },
-    });
-};

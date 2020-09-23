@@ -15,6 +15,9 @@ body {
     line-height: 45px;
     position: relative;
 }
+.table__bold {
+    font-weight: bold;
+}
 .stickyElement {
 position: fixed;
 display: -webkit-box;
@@ -544,7 +547,7 @@ button {
     border-bottom: 1px dotted #396ec6;
 }
 
-th {
+th, td {
     padding: 3px;
     font-weight: lighter !important;
     border: none;
